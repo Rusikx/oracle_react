@@ -1,26 +1,26 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import faPhone from '@fortawesome/fontawesome-free-solid/faPhone';
 
 import '../../styles/static/header.css';
 
-// import logo from '../logo.svg';
-
 class Header extends Component {
-	render (){
-		return (
-			<header className="App-header header">
-				<div className="header__logo"></div>
-				<div className="header__contacts">
-					<a href="tel:+7(727) 355 17 17">
-						<i className="fa fa-phone"></i>
-						<p>Консультация по телефону</p>
-						<span>+7(727)355-17-17</span>
-					</a>
-				</div>
-				{/*<img src={logo} className="App-logo" alt="logo" />
-				<h1 className="App-title">Welcome to React</h1>*/}
-			</header>
-		);
-	}
+    render() {
+        return (
+            <header className="header">
+                <div className="header__logo"/>
+                <div className="header__contacts">
+                    <a className="header__contacts--link" href="tel:+7(727) 355 17 17">
+                        <FontAwesomeIcon className='header__contacts--icon' icon={faPhone}/>
+                        <div className='header__contacts--call'>
+                            <p className='header__contacts--text'>Консультация по телефону</p>
+                            <span className='header__contacts--phone'>+7(727)355-17-17</span>
+                        </div>
+                    </a>
+                </div>
+            </header>
+        );
+    }
 }
 
 export default Header;
