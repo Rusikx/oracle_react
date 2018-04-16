@@ -1,13 +1,9 @@
 import React, {Component} from 'react';
-// import './App.css';
-import './styles/footer.css';
 import './styles/styles.css';
 import Header from "./components/static/header";
-import Footer from "./includes/footer";
+import Footer from "./components/static/footer";
 import Container from "./pages/Container";
-// import "./includes/fontawesome.js";
-
-// import './styles/font-awesome.css';
+import './styles/font-awesome.css';
 
 class App extends Component {
 
