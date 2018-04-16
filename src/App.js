@@ -7,6 +7,8 @@ import Footer from "./includes/footer";
 import Container from "./pages/Container";
 // import "./includes/fontawesome.js";
 
+// import './styles/font-awesome.css';
+
 class App extends Component {
 
     state = {

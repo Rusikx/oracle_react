@@ -1,0 +1,100 @@
+@keyframes arrowMoving {
+  0% {
+    top: 0; }
+  50% {
+    top: 10px; }
+  100% {
+    top: 0; } }
+
+.content--banner {
+  padding: 0 5% 50px;
+  background: #00CD98; }
+
+.banner--fixed {
+  background: url(../../images/oracle/title_items.png) no-repeat center -1px;
+  background-size: contain;
+  width: 100%;
+  height: 500px;
+  color: #fff; }
+
+.fixed--clear {
+  min-height: calc(56% - 145px); }
+
+.fixed--title {
+  margin: 0 auto;
+  text-align: center; }
+
+.fixed--title p {
+  margin: 0; }
+
+.fixed--title p:first-child {
+  font-size: 35px; }
+
+.fixed--title span {
+  font-size: 20px;
+  margin: 10px 0 0 0;
+  display: inline-block; }
+
+.fixed--title p {
+  font-size: 45px; }
+
+.angle--down {
+  position: relative;
+  width: 42px;
+  height: 65px;
+  margin: 0 auto 20px;
+  font-size: 65px; }
+
+.banner--arrows {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 42px;
+  height: 65px;
+  font-size: 65px;
+  animation: arrowMoving 1.4s linear infinite; }
+
+.fixed--list {
+  font-size: 22px;
+  text-align: center; }
+
+.fixed--list > div div:first-child {
+  cursor: pointer; }
+
+.fixed--list > * {
+  display: inline-block;
+  width: 30%;
+  box-sizing: border-box;
+  text-align: center; }
+
+.list--application .application--img {
+  background: #0098D7; }
+
+.list--decision .decision--img {
+  background: #F6C134; }
+
+.list--get .get--img {
+  background: #EB7B31; }
+
+.list--application .application--img svg {
+  min-height: 100%;
+  font-size: 65px;
+  padding: 10px 0 0; }
+
+.list--decision .decision--img svg {
+  min-height: 100%;
+  font-size: 85px;
+  padding: 0; }
+
+.list--get .get--img svg {
+  min-height: 100%;
+  font-size: 65px;
+  padding: 3px 0 0; }
+
+.list--application .application--img, .list--decision .decision--img, .list--get .get--img {
+  display: inline-block;
+  background-size: cover;
+  width: 119px;
+  height: 119px;
+  border: 4px solid #fff;
+  border-radius: 50%; }
