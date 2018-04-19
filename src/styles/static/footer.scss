@@ -33,7 +33,7 @@
   white-space: nowrap
 }
 
-.footer__socfishing a {
+.footer__social a {
   display: inline-block;
   background-color: rgba(255, 255, 255, 0);
   width: 30px;
@@ -44,26 +44,26 @@
   border: 2px solid #01AA53
 }
 
-.footer__socfishing a:before {
+.footer__social a:before {
   content: '';
   display: inline-block;
   vertical-align: middle;
   height: 100%
 }
 
-.footer__socfishing i, .footer__socfishing svg {
+.footer__social i, .footer__social svg {
   display: inline-block;
   color: #01AA53;
   vertical-align: middle
 }
-.footer__socfishing i {
+.footer__social i {
   font-size: 20px;
 }
-.footer__socfishing svg {
+.footer__social svg {
   font-size: 19px;
 }
 
-.footer__socfishing {
+.footer__social {
   width: 35%;
   text-align: center
 }
@@ -88,7 +88,7 @@
   text-align: center
 }
 
-.footer__oracle .footer__socfishing {
+.footer__oracle .footer__social {
   display: inline-block;
   width: auto
 }
@@ -97,3 +97,4 @@
   margin: 15px auto 0;
   font-size: 13px
 }
+

@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import Condition from "../includes/condition";
-import Banner from "../includes/banner";
+import React, {Component} from 'react';
+import Condition from "../components/static/condition";
+import Banner from "../components/static/banner";
 // import {response} from "../components/response";
 
 class Container extends Component {
