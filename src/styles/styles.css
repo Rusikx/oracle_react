@@ -153,7 +153,6 @@ div.want__active:hover .credline__frame, div.want__active:hover .hypotec__frame 
   border-radius: 10px; }
 
 .want__content {
-  width: 820px;
   display: block;
   margin: 0 auto;
   height: 570px; }
