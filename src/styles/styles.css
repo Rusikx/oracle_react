@@ -2,9 +2,10 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  body * {
-    margin: 0;
-    box-sizing: border-box; }
+
+body * {
+  margin: 0;
+  box-sizing: border-box; }
 
 /*want*/
 .content__want, .content__sun, .content__question, .content__auto,
