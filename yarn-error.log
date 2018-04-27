@@ -24,6 +24,7 @@ npm manifest:
       "@fortawesome/fontawesome-free-solid": "^5.0.9",
       "@fortawesome/react-fontawesome": "^0.0.18",
       "mobx": "^4.1.1",
+      "mobx-react": "^5.0.0",
       "node-sass": "^4.7.2",
       "npm-run-all": "^4.1.2",
       "react": "^16.2.0",
@@ -40,7 +41,19 @@ npm manifest:
       "build": "npm run build-css && react-scripts build",
       "test": "react-scripts test --env=jsdom",
       "eject": "react-scripts eject"
-    }
+    },
+    "description": "",
+    "main": "index.js",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Rusikx/oracle_react.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/Rusikx/oracle_react/issues"
+    },
+    "homepage": "https://github.com/Rusikx/oracle_react#readme"
   }
 
 yarn manifest: 
@@ -3122,7 +3135,7 @@ Lockfile:
     version "4.2.0"
     resolved "https://registry.yarnpkg.com/hoek/-/hoek-4.2.0.tgz#72d9d0754f7fe25ca2d01ad8f8f9a9449a89526d"
   
-  hoist-non-react-statics@^2.3.0:
+  hoist-non-react-statics@^2.3.0, hoist-non-react-statics@^2.3.1:
     version "2.5.0"
     resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.0.tgz#d2ca2dfc19c5a91c5a6615ce8e564ef0347e2a40"
   
@@ -4410,6 +4423,12 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
     dependencies:
       minimist "0.0.8"
+  
+  mobx-react@^5.0.0:
+    version "5.0.0"
+    resolved "https://registry.yarnpkg.com/mobx-react/-/mobx-react-5.0.0.tgz#8d5a33be376fa22b184a6f555d40a6a3a8459a16"
+    dependencies:
+      hoist-non-react-statics "^2.3.1"
   
   mobx@^4.1.1:
     version "4.1.1"
@@ -7156,7 +7175,7 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
-  Exit code: 1
+  Exit signal: SIGHUP
   Command: sh
   Arguments: -c npm-run-all -p watch-css start-js
   Directory: /var/www/oracle_react.test

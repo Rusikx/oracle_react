@@ -5,6 +5,9 @@ import Footer from "./components/static/footer";
 import Container from "./pages/Container";
 import './styles/font-awesome.css';
 
+import {observer} from 'mobx-react';
+import {observable} from 'mobx-react/custom';
+
 class App extends Component {
 
     state = {
