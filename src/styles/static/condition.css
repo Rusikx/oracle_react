@@ -1,0 +1,22 @@
+.condition {
+  display: inline-block;
+  width: 100%;
+  background-color: #F1EFEF;
+  padding: 20px 10% 0;
+  box-sizing: border-box;
+  color: #697382; }
+
+.condition > p {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  font-weight: bold; }
+
+.condition p > span {
+  display: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px; }
+
+.condition div p {
+  margin: 0 0 10px 0;
+  font-size: 14px; }
