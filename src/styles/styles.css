@@ -1,7 +1,160 @@
-body {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  body * {
+body * {
     margin: 0;
-    box-sizing: border-box; }
+    box-sizing: border-box; 
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*want*/
+.content__want, .content__sun, .content__question, .content__auto,
+.content__nearly, .content__fio, .content__last, .content__zalog {
+  padding: 30px 10% 15px; }
+
+.want__title {
+  text-align: center;
+  font-size: 31px;
+  padding: 10px 0 5px; }
+
+.want__content {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 50px 50px 50px;
+  box-sizing: border-box; }
+
+.want__content > * {
+  width: 35%;
+  text-align: center; }
+
+.content__get {
+  float: left;
+  margin: 0 5% 0 10%; }
+
+.content__buy {
+  float: right;
+  margin: 0 10% 0 5%; }
+
+.buy__frame--img {
+  background: url(../images/oracle/auto.svg) no-repeat; }
+
+.get__frame--img {
+  background: url(../images/oracle/express.svg) no-repeat; }
+
+.buy__frame--img, .get__frame--img {
+  display: inline-block;
+  background-size: cover;
+  width: 141px;
+  height: 141px; }
+
+.get__frame, .buy__frame {
+  border: 3px solid #FFF;
+  padding: 20px;
+  box-sizing: border-box; }
+
+.get__frame--text, .buy__frame--text {
+  font-size: 25px;
+  padding: 5px 0; }
+
+.buy__frame--text br {
+  display: none; }
+
+.get__check, .buy__check {
+  margin: 10px 0;
+  height: 30px; }
+
+.get__check a, .buy__check a {
+  display: inline-block;
+  background-color: #EBEBEB;
+  border-radius: 20px;
+  padding: 4px 5px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff; }
+
+div.want__active .get__check a, div.want__active .buy__check a,
+div.want__active:hover .get__check a, div.want__active:hover .buy__check a {
+  background-color: #FFBB00;
+  color: #EBEBEB; }
+
+div.want__active .get__frame, div.want__active .buy__frame,
+div.want__active:hover .get__frame, div.want__active:hover .buy__frame {
+  border: 3px solid #FFBB00;
+  border-radius: 10px; }
+
+.content__get:hover .get__check a, .content__buy:hover .buy__check a {
+  background-color: #01AA53;
+  color: #EBEBEB; }
+
+.content__get:hover .get__frame, .content__buy:hover .buy__frame {
+  border: 3px solid #01AA53;
+  border-radius: 10px; }
+
+/*sun*/
+.sun__what, .sun__time, .sun__vznos-home {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0; }
+
+.content__credline {
+  float: left;
+  margin: 0 5% 0 10%; }
+
+.content__hypotec {
+  float: right;
+  margin: 0 10% 0 5%; }
+
+.credline__frame, .hypotec__frame {
+  border: 3px solid #FFF;
+  padding: 20px;
+  box-sizing: border-box; }
+
+.credline__frame--img, .hypotec__frame--img {
+  display: inline-block;
+  background-size: cover;
+  width: 141px;
+  height: 141px; }
+
+.credline__frame--img {
+  background: url(../images/oracle/credline.svg) no-repeat; }
+
+.hypotec__frame--img {
+  background: url(../images/oracle/hypotech.svg) no-repeat; }
+
+.credline__frame--text, .hypotec__frame--text {
+  font-size: 25px;
+  padding: 5px 0; }
+
+.credline__check, .hypotec__check {
+  margin: 10px 0;
+  height: 30px; }
+
+.credline__check a, .hypotec__check a {
+  display: inline-block;
+  background-color: #EBEBEB;
+  border-radius: 20px;
+  padding: 4px 5px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff; }
+
+.content__credline:hover .credline__check a, .content__hypotec:hover .hypotec__check a {
+  background-color: #01AA53;
+  color: #EBEBEB; }
+
+.content__credline:hover .credline__frame, .content__hypotec:hover .hypotec__frame {
+  border: 3px solid #01AA53;
+  border-radius: 10px; }
+
+div.want__active .credline__frame, div.want__active .hypotec__frame,
+div.want__active:hover .credline__frame, div.want__active:hover .hypotec__frame {
+  border: 3px solid #FFBB00;
+  border-radius: 10px; }
+
+.want__content {
+  display: block;
+  margin: 0 auto;
+  height: 570px; }
+
+.get__check, .buy__check, .credline__check, .hypotec__check {
+  margin: -200px 0 0 70px;
+  height: 30px;
+  position: absolute; }
