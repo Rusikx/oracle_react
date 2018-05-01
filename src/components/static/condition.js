@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 
 import '../../styles/static/condition.css';
 
-class condition extends Component {
+class condition extends PureComponent {
     render() {
         return (
             <div className="condition">

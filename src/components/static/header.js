@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faPhone from '@fortawesome/fontawesome-free-solid/faPhone';
 
 import '../../styles/static/header.css';
 
-class Header extends Component {
+class Header extends PureComponent {
     render() {
         return (
             <header className="header">

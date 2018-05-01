@@ -98,3 +98,22 @@
   height: 119px;
   border: 4px solid #fff;
   border-radius: 50%; }
+
+@media (max-width: 900px) {
+  .list--application .application--img, .list--decision .decision--img, .list--get .get--img {
+    width: 70px;
+    height: 70px; }
+  .list--decision .decision--img svg {
+    font-size: 40px;
+    padding: 1px 0 0; }
+  .list--get .get--img svg {
+    font-size: 40px;
+    padding: 1px 0 0; }
+  .list--application .application--img svg {
+    font-size: 40px;
+    padding: 5px 0 0; }
+  .fixed--list {
+    font-size: 0.8em;
+    text-align: center; }
+  .content--banner {
+    padding: 0; } }

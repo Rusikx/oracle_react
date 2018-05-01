@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 
 import '../../styles/static/footer.css';
 
-class Footer extends Component {
+class Footer extends PureComponent {
     render() {
         return (
             <footer className="footer">
