@@ -1,6 +1,6 @@
 import {observable, action} from 'mobx'
 
-class ViewPartsControl {
+export class ViewPartsControl {
     @observable show_banner = true;
     @observable show_footer = true;
     @observable show_condition = true;
@@ -51,4 +51,4 @@ class ViewPartsControl {
 }
 
 
-export default ViewPartsControl;
+export default new ViewPartsControl();

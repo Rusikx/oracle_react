@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faClock from '@fortawesome/fontawesome-free-solid/faClock';
 import faTv from '@fortawesome/fontawesome-free-solid/faTv';
@@ -7,7 +7,7 @@ import faArrows from '@fortawesome/fontawesome-free-solid/faAngleDoubleDown';
 
 import '../../styles/static/banner.css';
 
-class banner extends Component {
+class banner extends PureComponent {
 	render (){
 		return (
 			<div className="content--banner">

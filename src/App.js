@@ -6,8 +6,7 @@ import Container from "./pages/Container";
 import './styles/font-awesome.css';
 import Banner from "./components/static/banner";
 import {observer} from 'mobx-react';
-import PropTypes from 'prop-types';
-import ViewPartsControl from "./storages/ViewPartsControl";
+import control from "./storages/ViewPartsControl";
 import Condition from "./components/static/condition";
 
 @observer
@@ -16,18 +15,13 @@ class App extends Component {
         return (
             <div className="App">
                 <Header/>
-                { this.props.viewControl.show_banner ? <Banner/> : ''}
-                <Container viewControl={this.props.viewControl} />
-
-                { this.props.viewControl.show_condition ? <Condition/> : ''}
-                { this.props.viewControl.show_footer ? <Footer/> : ''}
+                { control.show_banner ? <Banner/> : ''}
+                <Container/>
+                { control.show_condition ? <Condition/> : ''}
+                { control.show_footer ? <Footer/> : ''}
             </div>
         );
     }
-}
-
-App.propTypes = {
-    viewControl: PropTypes.instanceOf(ViewPartsControl)
 }
 
 export default App;
