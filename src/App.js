@@ -7,7 +7,7 @@ import Banner from "./components/static/banner";
 import {observer} from 'mobx-react';
 import control from "./storages/ViewPartsControl";
 import Condition from "./components/static/condition";
-import CategorySelector from "./components/smart/CategorySelector";
+import StepsWidget from "./components/smart/StepsWidget";
 
 @observer
 class App extends Component {
@@ -16,7 +16,7 @@ class App extends Component {
             <div className="App">
                 <Header/>
                 { control.show_banner ? <Banner/> : ''}
-                <CategorySelector/>
+                <StepsWidget/>
                 { control.show_condition ? <Condition/> : ''}
                 { control.show_footer ? <Footer/> : ''}
             </div>
