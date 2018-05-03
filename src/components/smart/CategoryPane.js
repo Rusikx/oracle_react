@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 class CategoryPane extends Component {
     render() {
         const image = this.props.image;
-        return <div className={this.props.selected ? 'category-pane category-pane-selected' : 'category-pane'}>
+        return <div onClick={()=>this.props.onSelect()} className={this.props.selected ? 'category-pane category-pane-selected' : 'category-pane'}>
             <div className='category-chooser'>
                 <div className="category-frame">
                     <div className="category-frame--img"
@@ -25,6 +25,7 @@ CategoryPane.propTypes = {
     image: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
     selected: PropTypes.bool,
+    onSelect: PropTypes.func,
 };
 
 export default CategoryPane;
