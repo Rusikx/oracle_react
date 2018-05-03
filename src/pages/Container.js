@@ -3,7 +3,7 @@ import {observer} from 'mobx-react';
 import control from "../storages/ViewPartsControl";
 import CategoryPane from "../components/smart/CategoryPane";
 
-import '../styles/categories.css';
+import '../styles/smart/categories.css';
 
 @observer
 class Container extends Component {
