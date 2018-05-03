@@ -140,7 +140,7 @@ const auto = {
     answers: [
         {
             id: 1,
-            answer_id: 1,
+            question_id: 1,
             step_id: 1,
             title: 'До 100 000 ₸',
             value: 0,
@@ -148,7 +148,7 @@ const auto = {
         },
         {
             id: 2,
-            answer_id: 1,
+            question_id: 1,
             step_id: 1,
             title: '100 000 - 300 000 ₸',
             value: 150000,
@@ -156,7 +156,7 @@ const auto = {
         },
         {
             id: 3,
-            answer_id: 1,
+            question_id: 1,
             step_id: 1,
             title: '300 000 - 1 000 000 ₸',
             value: 500000,
@@ -164,7 +164,7 @@ const auto = {
         },
         {
             id: 4,
-            answer_id: 1,
+            question_id: 1,
             step_id: 1,
             title: '1 000 000 - 3 000 000 ₸',
             value: 2500000,
@@ -172,7 +172,7 @@ const auto = {
         },
         {
             id: 5,
-            answer_id: 1,
+            question_id: 1,
             step_id: 1,
             title: 'Указать точную сумму',
             value: 0,
@@ -180,7 +180,7 @@ const auto = {
         },
         {
             id: 6,
-            answer_id: 2,
+            question_id: 2,
             step_id: 1,
             title: '1 месяц',
             value: 1,
@@ -188,7 +188,7 @@ const auto = {
         },
         {
             id: 7,
-            answer_id: 2,
+            question_id: 2,
             step_id: 1,
             title: '3 месяца',
             value: 3,
@@ -196,7 +196,7 @@ const auto = {
         },
         {
             id: 8,
-            answer_id: 2,
+            question_id: 2,
             step_id: 1,
             title: '6 месяцев',
             value: 6,
@@ -204,7 +204,7 @@ const auto = {
         },
         {
             id: 9,
-            answer_id: 2,
+            question_id: 2,
             step_id: 1,
             title: '1 год',
             value: 12,
@@ -212,7 +212,7 @@ const auto = {
         },
         {
             id: 10,
-            answer_id: 2,
+            question_id: 2,
             step_id: 1,
             title: '2 года',
             value: 24,
@@ -220,7 +220,7 @@ const auto = {
         },
         {
             id: 11,
-            answer_id: 2,
+            question_id: 2,
             step_id: 1,
             title: '3 года',
             value: 36,
@@ -228,7 +228,7 @@ const auto = {
         },
         {
             id: 12,
-            answer_id: 2,
+            question_id: 2,
             step_id: 1,
             title: '5 лет',
             value: 60,
@@ -236,7 +236,7 @@ const auto = {
         },
         {
             id: 13,
-            answer_id: 2,
+            question_id: 2,
             step_id: 1,
             title: 'Указать точный срок',
             value: 60,
@@ -244,7 +244,7 @@ const auto = {
         },
         {
             id: 14,
-            answer_id: 3,
+            question_id: 3,
             step_id: 2,
             title: 'Не работаю',
             value: 0,
@@ -252,7 +252,7 @@ const auto = {
         },
         {
             id: 15,
-            answer_id: 3,
+            question_id: 3,
             step_id: 2,
             title: 'До 6 мес',
             value: 5,
@@ -260,7 +260,7 @@ const auto = {
         },
         {
             id: 16,
-            answer_id: 3,
+            question_id: 3,
             step_id: 2,
             title: 'Свыше 6 мес',
             value: 7,
@@ -268,7 +268,7 @@ const auto = {
         },
         {
             id: 17,
-            answer_id: 3,
+            question_id: 3,
             step_id: 2,
             title: 'Работаю на себя',
             value: 0,
@@ -276,7 +276,7 @@ const auto = {
         },
         {
             id: 18,
-            answer_id: 4,
+            question_id: 4,
             step_id: 2,
             title: 'Да',
             value: 1,
@@ -284,7 +284,7 @@ const auto = {
         },
         {
             id: 19,
-            answer_id: 4,
+            question_id: 4,
             step_id: 2,
             title: 'Нет',
             value: 0,
@@ -292,7 +292,7 @@ const auto = {
         },
         {
             id: 20,
-            answer_id: 5,
+            question_id: 5,
             step_id: 2,
             title: 'Официального дохода нет',
             value: 0,
@@ -300,7 +300,7 @@ const auto = {
         },
         {
             id: 21,
-            answer_id: 5,
+            question_id: 5,
             step_id: 2,
             title: 'До 60 000 ₸',
             value: 50000,
@@ -308,7 +308,7 @@ const auto = {
         },
         {
             id: 22,
-            answer_id: 5,
+            question_id: 5,
             step_id: 2,
             title: 'Свыше 60 000 ₸',
             value: 70000,
@@ -316,7 +316,7 @@ const auto = {
         },
         {
             id: 23,
-            answer_id: 5,
+            question_id: 5,
             step_id: 2,
             title: 'Указать другую сумму',
             value: 0,
@@ -324,7 +324,7 @@ const auto = {
         },
         {
             id: 24,
-            answer_id: 6,
+            question_id: 6,
             step_id: 3,
             title: 'Да',
             value: 1,
@@ -332,7 +332,7 @@ const auto = {
         },
         {
             id: 25,
-            answer_id: 6,
+            question_id: 6,
             step_id: 3,
             title: 'Нет',
             value: 0,
