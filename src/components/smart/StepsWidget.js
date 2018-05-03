@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
 import {observer} from 'mobx-react';
 
 import quiz_control from "../../storages/QuizControl";
@@ -7,27 +6,39 @@ import CategorySelector from "./CategorySelector";
 
 @observer
 class StepsWidget extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
     }
 
     render() {
 
-        if(quiz_control.current_step_id === 0){
+        if (quiz_control.current_step_id === 0) {
             return <div className='steps-widget'>
                 <CategorySelector/>
             </div>
         }
 
         return <div className='steps-widget'>
-            <div>{quiz_control.current_step_id}</div>
+            <div>
+                {quiz_control.current_step_id}
+                <br/>
+                <br/>
+                {JSON.stringify(quiz_control.current_step_questions)}
+                <br/>
+                <br/>
+                {JSON.stringify(quiz_control.current_step_answers)}
+            </div>
             <div className='steps-paginator'>
                 <div className='step-btn btn-prev'
-                     onClick={()=>quiz_control.goToPrevStep()}
-                >Назад</div>
-                <div className='step-btn btn-next'
-                     onClick={()=>quiz_control.goToNextStep()}
-                >Вперед</div>
+                     onClick={() => quiz_control.goToPrevStep()}
+                >Назад
+                </div>
+                {
+                    quiz_control.current_step.type !== 'form' &&
+                    <div className='step-btn btn-next'
+                         onClick={() => quiz_control.goToNextStep()}
+                    >Вперед</div>
+                }
             </div>
         </div>;
     }
