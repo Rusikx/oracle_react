@@ -1807,7 +1807,7 @@ export const scheme = {
                     "type": "ID!"
                 },
                 "answer_id": {
-                    "name": "answer_id",
+                    "name": "question_id",
                     "ref": null,
                     "type": "Int!"
                 },
@@ -1854,7 +1854,7 @@ export const scheme = {
             },
             "not_null_fields": [
                 "id",
-                "answer_id",
+                "question_id",
                 "question_id",
                 "category_id"
             ],
@@ -1890,7 +1890,7 @@ export const scheme = {
                     "type": "ID!"
                 },
                 "answer_id": {
-                    "name": "answer_id",
+                    "name": "question_id",
                     "ref": null,
                     "type": "Int!"
                 },
@@ -1927,7 +1927,7 @@ export const scheme = {
             },
             "not_null_fields": [
                 "id",
-                "answer_id",
+                "question_id",
                 "step_id"
             ],
             "relative_fields": {
@@ -2727,7 +2727,7 @@ export const scheme = {
             "is_list": false,
             "args": {
                 "answer_id": {
-                    "name": "answer_id",
+                    "name": "question_id",
                     "type": "Int"
                 },
                 "step_id": {
@@ -2759,7 +2759,7 @@ export const scheme = {
                     "type": "ID!"
                 },
                 "answer_id": {
-                    "name": "answer_id",
+                    "name": "question_id",
                     "type": "Int"
                 },
                 "step_id": {
@@ -3169,7 +3169,7 @@ export const scheme = {
             "is_list": false,
             "args": {
                 "answer_id": {
-                    "name": "answer_id",
+                    "name": "question_id",
                     "type": "Int"
                 },
                 "question_id": {
@@ -3205,7 +3205,7 @@ export const scheme = {
                     "type": "ID!"
                 },
                 "answer_id": {
-                    "name": "answer_id",
+                    "name": "question_id",
                     "type": "Int"
                 },
                 "question_id": {
@@ -5090,7 +5090,7 @@ export const scheme = {
                     "type": "ID"
                 },
                 "answer_id": {
-                    "name": "answer_id",
+                    "name": "question_id",
                     "type": "Int"
                 },
                 "question_id": {
@@ -5126,7 +5126,7 @@ export const scheme = {
                     "type": "ID"
                 },
                 "answer_id": {
-                    "name": "answer_id",
+                    "name": "question_id",
                     "type": "Int"
                 },
                 "question_id": {
@@ -5162,7 +5162,7 @@ export const scheme = {
                     "type": "ID"
                 },
                 "answer_id": {
-                    "name": "answer_id",
+                    "name": "question_id",
                     "type": "Int"
                 },
                 "step_id": {
@@ -5194,7 +5194,7 @@ export const scheme = {
                     "type": "ID"
                 },
                 "answer_id": {
-                    "name": "answer_id",
+                    "name": "question_id",
                     "type": "Int"
                 },
                 "step_id": {
