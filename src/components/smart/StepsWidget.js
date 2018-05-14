@@ -3,6 +3,7 @@ import {observer} from 'mobx-react';
 
 import quiz_control from "../../storages/QuizControl";
 import CategorySelector from "./CategorySelector";
+import OracleButton from "../fields/OracleButton";
 
 @observer
 class StepsWidget extends Component {
@@ -27,6 +28,9 @@ class StepsWidget extends Component {
                 <br/>
                 <br/>
                 {JSON.stringify(quiz_control.current_step_answers)}
+                <div style={{margin:'0 auto', width:'80%', padding:'20px'}}>
+                <OracleButton/>
+                </div>
             </div>
             <div className='steps-paginator'>
                 <div className='step-btn btn-prev'

@@ -176,7 +176,7 @@ const pledge = {
             step_id: 1,
             title: 'Указать точную сумму',
             value: 0,
-            type: 'input-button'
+            type: 'input-OracleButton'
         },
         {
             id: 6,
@@ -240,7 +240,7 @@ const pledge = {
             step_id: 1,
             title: 'Указать точный срок',
             value: 60,
-            type: 'input-button'
+            type: 'input-OracleButton'
         },
         {
             id: 14,
@@ -320,7 +320,7 @@ const pledge = {
             step_id: 2,
             title: 'Указать другую сумму',
             value: 0,
-            type: 'input-button'
+            type: 'input-OracleButton'
         },
         {
             id: 24,
