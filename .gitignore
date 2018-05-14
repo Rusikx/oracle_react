@@ -1,0 +1,4 @@
+.idea
+my-app/yarn-error.log
+/node_modules
+/build
