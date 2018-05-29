@@ -1,0 +1,14 @@
+.questions {
+  width: 100%; }
+
+.questions .questions__title {
+  margin: 10px 0 8px;
+  text-align: center;
+  font-size: 25px; }
+
+.questions .questions__content {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  width: 100%; }
