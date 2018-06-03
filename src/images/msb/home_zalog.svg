@@ -1,75 +1,78 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="54.333" height="54.333" viewBox="0 0 54.333 54.333">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #aff0d0;
-      }
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="54.333" height="54.333"
+     viewBox="0 0 54.333 54.333">
+    <defs>
+        <style>
+            .cls-1 {
+            fill: #aff0d0;
+            }
 
-      .cls-2, .cls-4, .cls-6, .cls-8 {
-        fill: none;
-      }
+            .cls-2, .cls-4, .cls-6, .cls-8 {
+            fill: none;
+            }
 
-      .cls-2 {
-        stroke: #2ac173;
-      }
+            .cls-2 {
+            stroke: #2ac173;
+            }
 
-      .cls-2, .cls-6, .cls-7, .cls-8 {
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
+            .cls-2, .cls-6, .cls-7, .cls-8 {
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            }
 
-      .cls-3, .cls-7 {
-        fill: #2ac173;
-      }
+            .cls-3, .cls-7 {
+            fill: #2ac173;
+            }
 
-      .cls-3 {
-        stroke: #18a75d;
-      }
+            .cls-3 {
+            stroke: #18a75d;
+            }
 
-      .cls-3, .cls-4 {
-        stroke-miterlimit: 10;
-      }
+            .cls-3, .cls-4 {
+            stroke-miterlimit: 10;
+            }
 
-      .cls-4, .cls-6, .cls-7, .cls-8 {
-        stroke: #006632;
-      }
+            .cls-4, .cls-6, .cls-7, .cls-8 {
+            stroke: #006632;
+            }
 
-      .cls-4, .cls-7, .cls-8 {
-        stroke-width: 0.5px;
-      }
+            .cls-4, .cls-7, .cls-8 {
+            stroke-width: 0.5px;
+            }
 
-      .cls-5 {
-        fill: #006632;
-      }
-    </style>
-  </defs>
-  <title>home_zalog</title>
-  <circle class="cls-1" cx="27.167" cy="29.348" r="24.635"/>
-  <path class="cls-2" d="M51.883,17.138a26.648,26.648,0,1,1-13.77-14.3"/>
-  <g>
-    <circle class="cls-3" cx="45.972" cy="9.362" r="7.861"/>
+            .cls-5 {
+            fill: #006632;
+            }
+        </style>
+    </defs>
+    <title>home_zalog</title>
+    <circle class="cls-1" cx="27.167" cy="29.348" r="24.635"/>
+    <path class="cls-2" d="M51.883,17.138a26.648,26.648,0,1,1-13.77-14.3"/>
     <g>
-      <rect class="cls-4" x="43.42" y="8.071" width="5.164" height="5.219" rx="0.729" ry="0.729"/>
-      <path class="cls-4" d="M44.134,8.071V7.263A1.877,1.877,0,0,1,46,5.375h0a1.877,1.877,0,0,1,1.867,1.887v.809"/>
-      <path class="cls-5" d="M46.64,10.319a.644.644,0,1,0-.871.6v.77h.454v-.77A.647.647,0,0,0,46.64,10.319Z"/>
+        <circle class="cls-3" cx="45.972" cy="9.362" r="7.861"/>
+        <g>
+            <rect class="cls-4" x="43.42" y="8.071" width="5.164" height="5.219" rx="0.729" ry="0.729"/>
+            <path class="cls-4"
+                  d="M44.134,8.071V7.263A1.877,1.877,0,0,1,46,5.375h0a1.877,1.877,0,0,1,1.867,1.887v.809"/>
+            <path class="cls-5" d="M46.64,10.319a.644.644,0,1,0-.871.6v.77h.454v-.77A.647.647,0,0,0,46.64,10.319Z"/>
+        </g>
     </g>
-  </g>
-  <line class="cls-6" x1="9.397" y1="42.527" x2="46.312" y2="42.527"/>
-  <path class="cls-6" d="M16.917,36.57a1.83,1.83,0,0,0-1.83,1.83"/>
-  <path class="cls-6" d="M16.1,38.668a2.456,2.456,0,0,0-2.917,3.859"/>
-  <path class="cls-6" d="M40.036,35.606A2.794,2.794,0,0,1,42.831,38.4"/>
-  <path class="cls-6" d="M41.82,38.665A2.429,2.429,0,0,1,44.7,42.481"/>
-  <path class="cls-6" d="M25.491,20.025A3.968,3.968,0,0,0,20.1,16.771"/>
-  <path class="cls-6" d="M19.862,16.689a4.884,4.884,0,0,0-9.6.284"/>
-  <path class="cls-6" d="M21.018,20.525a2.577,2.577,0,1,0-4.655-1.969"/>
-  <path class="cls-6" d="M9.47,29.326a2.578,2.578,0,0,0,4.792,1.8"/>
-  <path class="cls-6" d="M7.7,24.513a2.577,2.577,0,1,0,2.823,4.258"/>
-  <path class="cls-6" d="M10.263,16.972a4.617,4.617,0,0,0,.93,9.14"/>
-  <line class="cls-6" x1="40.036" y1="27.66" x2="40.036" y2="42.216"/>
-  <line class="cls-6" x1="18.176" y1="42.216" x2="18.176" y2="27.66"/>
-  <rect class="cls-7" x="26.663" y="26.832" width="5.092" height="4.223" transform="translate(58.418 57.886) rotate(-180)"/>
-  <polyline class="cls-8" points="31.755 42.527 31.755 34.501 26.663 34.501 26.663 42.527"/>
-  <path class="cls-6" d="M44.048,30.335c-.154,0-14.839-11.259-14.839-11.259L15.829,29.288"/>
-  <path class="cls-6" d="M11.4,22.453c.6.824,2.926,4.247,2.881,4.247s0,11.8,0,11.8"/>
-  <line class="cls-6" x1="16.153" y1="26.408" x2="18.348" y2="23.322"/>
+    <line class="cls-6" x1="9.397" y1="42.527" x2="46.312" y2="42.527"/>
+    <path class="cls-6" d="M16.917,36.57a1.83,1.83,0,0,0-1.83,1.83"/>
+    <path class="cls-6" d="M16.1,38.668a2.456,2.456,0,0,0-2.917,3.859"/>
+    <path class="cls-6" d="M40.036,35.606A2.794,2.794,0,0,1,42.831,38.4"/>
+    <path class="cls-6" d="M41.82,38.665A2.429,2.429,0,0,1,44.7,42.481"/>
+    <path class="cls-6" d="M25.491,20.025A3.968,3.968,0,0,0,20.1,16.771"/>
+    <path class="cls-6" d="M19.862,16.689a4.884,4.884,0,0,0-9.6.284"/>
+    <path class="cls-6" d="M21.018,20.525a2.577,2.577,0,1,0-4.655-1.969"/>
+    <path class="cls-6" d="M9.47,29.326a2.578,2.578,0,0,0,4.792,1.8"/>
+    <path class="cls-6" d="M7.7,24.513a2.577,2.577,0,1,0,2.823,4.258"/>
+    <path class="cls-6" d="M10.263,16.972a4.617,4.617,0,0,0,.93,9.14"/>
+    <line class="cls-6" x1="40.036" y1="27.66" x2="40.036" y2="42.216"/>
+    <line class="cls-6" x1="18.176" y1="42.216" x2="18.176" y2="27.66"/>
+    <rect class="cls-7" x="26.663" y="26.832" width="5.092" height="4.223"
+          transform="translate(58.418 57.886) rotate(-180)"/>
+    <polyline class="cls-8" points="31.755 42.527 31.755 34.501 26.663 34.501 26.663 42.527"/>
+    <path class="cls-6" d="M44.048,30.335c-.154,0-14.839-11.259-14.839-11.259L15.829,29.288"/>
+    <path class="cls-6" d="M11.4,22.453c.6.824,2.926,4.247,2.881,4.247s0,11.8,0,11.8"/>
+    <line class="cls-6" x1="16.153" y1="26.408" x2="18.348" y2="23.322"/>
 </svg>

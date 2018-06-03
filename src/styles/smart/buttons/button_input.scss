@@ -1,7 +1,7 @@
-.button {
+.button._input {
   display: inline-flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 
   width: 100%;
   height: 40px;
@@ -11,6 +11,26 @@
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
+
+  &._action {
+    padding: 0;
+
+    input {
+      width: 100%;
+      background-color: #fff;
+      color: #000;
+      border: 2px solid #00AB4F;
+      border-radius: 5px;
+      font-size: 20px;
+      line-height: 34px;
+      box-sizing: border-box;
+      text-align: center;
+
+      &._blur {
+        background-color: #EBEBEB;
+      }
+    }
+  }
 
   .button__check {
     display: inline-flex;
@@ -33,3 +53,4 @@
     font-size: 18px;
   }
 }
+

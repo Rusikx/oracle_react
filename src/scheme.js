@@ -473,7 +473,7 @@ export const scheme = {
                 "steps": {
                     "name": "steps",
                     "ref": "Step",
-                    "type": "[Step]"
+                    "type": "[Steps.js]"
                 },
                 "products": {
                     "name": "products",
@@ -1047,7 +1047,7 @@ export const scheme = {
                 "steps": {
                     "name": "steps",
                     "ref": "Step",
-                    "type": "[Step]"
+                    "type": "[Steps.js]"
                 },
                 "state": {
                     "name": "state",

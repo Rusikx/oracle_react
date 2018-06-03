@@ -1,51 +1,36 @@
-.button._input {
+.button {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-
+  justify-content: flex-start;
   width: 100%;
   height: 40px;
   padding: 0 15px;
-
   background-color: #EBEBEB;
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
-
-  &._action {
-    padding: 0;
-
-    input {
-      width: 100%;
-      background-color: #fff;
-      color: #000;
-      border: 2px solid #00AB4F;
-      border-radius: 5px;
-      font-size: 20px;
-      line-height: 34px;
-      box-sizing: border-box;
-      text-align: center;
-    }
-  }
-
-  .button__check {
+  border: 2px solid #EBEBEB; }
+  .button:hover {
+    border: 2px solid #01AA53; }
+    .button:hover .button__check {
+      background-color: #01AA53; }
+  .button._checked {
+    border: 2px solid #FFBB00; }
+    .button._checked .button__check {
+      background-color: #FFBB00; }
+  .button .button__check {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 26px;
     height: 26px;
-
     background-color: #BFBFBF;
     border-radius: 20px;
     font: normal 16px/26px "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #fff;
-  }
-
-  .button__text {
+    color: #fff; }
+  .button .button__text {
     margin: 0;
     padding: 0 0 0 10px;
     color: #000;
     vertical-align: middle;
-    font-size: 18px;
-  }
-}
+    font-size: 18px; }
