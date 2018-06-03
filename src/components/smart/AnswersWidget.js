@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import OracleButton from "../buttons/OracleButton";
 import OracleButtonInput from "../buttons/OracleButtonInput";
+import ButtonInput from "../../storages/ButtonInputControl";
 
 import '../../styles/smart/answers.css';
 
@@ -21,6 +22,10 @@ class QuestionsWidget extends PureComponent {
 			            	return <OracleButtonInput
 					            title={this.props.title}
 					            type={this.props.type}
+					            onClick = {()=>{
+						            ButtonInput.actionButtonInput();
+					            }}
+					            action = {ButtonInput.status_active}
 				            />;
 			            default:
 			            	return <div>{JSON.stringify(this.props)}</div>;
