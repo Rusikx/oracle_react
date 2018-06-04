@@ -1,0 +1,5 @@
+export const LOAD_CATEGORY_QUESTIONS = 'LOAD_CATEGORY_QUESTIONS';
+export const GET_BY_ID = 'GET_BY_ID';
+export const GET_QUESTIONS_BY_STEP_ID = 'GET_QUESTIONS_BY_STEP_ID';
+
+export const SET_VALUE = 'SET_VALUE';

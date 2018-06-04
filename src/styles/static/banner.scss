@@ -1,9 +1,15 @@
 @import "../paths";
 
 @keyframes arrowMoving {
-  0% {top: 0}
-  50% {top: 10px}
-  100% {top: 0}
+  0% {
+    top: 0
+  }
+  50% {
+    top: 10px
+  }
+  100% {
+    top: 0
+  }
 }
 
 .content--banner {
@@ -19,12 +25,32 @@
   color: #fff
 }
 
-.fixed--clear {min-height: calc(56% - 145px)}
-.fixed--title {margin: 0 auto;text-align: center}
-.fixed--title p {margin: 0}
-.fixed--title p:first-child {font-size: 35px}
-.fixed--title span {font-size: 20px;margin: 10px 0 0 0;display: inline-block}
-.fixed--title p {font-size: 45px}
+.fixed--clear {
+  min-height: calc(56% - 145px)
+}
+
+.fixed--title {
+  margin: 0 auto;
+  text-align: center
+}
+
+.fixed--title p {
+  margin: 0
+}
+
+.fixed--title p:first-child {
+  font-size: 35px
+}
+
+.fixed--title span {
+  font-size: 20px;
+  margin: 10px 0 0 0;
+  display: inline-block
+}
+
+.fixed--title p {
+  font-size: 45px
+}
 
 .angle--down {
   position: relative;
@@ -33,6 +59,7 @@
   margin: 0 auto 20px;
   font-size: 65px;
 }
+
 .banner--arrows {
   position: absolute;
   top: 0;
@@ -43,8 +70,15 @@
   animation: arrowMoving 1.4s linear infinite;
 }
 
-.fixed--list {font-size: 22px;text-align: center}
-.fixed--list > div div:first-child {cursor: pointer}
+.fixed--list {
+  font-size: 22px;
+  text-align: center
+}
+
+.fixed--list > div div:first-child {
+  cursor: pointer
+}
+
 .fixed--list > * {
   display: inline-block;
   width: 30%;
@@ -55,22 +89,27 @@
 .list--application .application--img {
   background: #0098D7;
 }
+
 .list--decision .decision--img {
   background: #F6C134;
 }
+
 .list--get .get--img {
   background: #EB7B31;
 }
+
 .list--application .application--img svg {
   min-height: 100%;
   font-size: 65px;
   padding: 10px 0 0;
 }
+
 .list--decision .decision--img svg {
   min-height: 100%;
   font-size: 85px;
   padding: 0;
 }
+
 .list--get .get--img svg {
   min-height: 100%;
   font-size: 65px;
@@ -87,7 +126,7 @@
 }
 
 @media (max-width: 900px) {
-  .list--application .application--img, .list--decision .decision--img, .list--get .get--img{
+  .list--application .application--img, .list--decision .decision--img, .list--get .get--img {
     width: 70px;
     height: 70px;
   }
@@ -95,7 +134,7 @@
     font-size: 40px;
     padding: 1px 0 0;
   }
-  .list--get .get--img svg{
+  .list--get .get--img svg {
     font-size: 40px;
     padding: 1px 0 0;
   }
@@ -103,11 +142,11 @@
     font-size: 40px;
     padding: 5px 0 0;
   }
-  .fixed--list{
+  .fixed--list {
     font-size: 0.8em;
     text-align: center;
   }
-  .content--banner{
+  .content--banner {
     padding: 0;
   }
 }
