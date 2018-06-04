@@ -2,14 +2,24 @@ import React, {Component} from 'react';
 import {observer} from 'mobx-react';
 
 import '../../styles/smart/categories.css';
-import control from "../../storages/ViewPartsControl";
-import category from "../../storages/CategoryControl";
 import CategoryPane from "../smart/CategoryPane";
+import * as CATEGORY from '../../mst/constants/category';
+import * as QUESTIONS from '../../mst/constants/questions';
+import * as ANSWERS from '../../mst/constants/answers';
+import * as STEPS from '../../mst/constants/steps';
 
-import quiz_control from "../../storages/QuizControl";
+import {answers, category, questions, steps} from '../../mst/store';
 
 @observer
 class CategorySelector extends Component {
+
+    async loadCategory(cat) {
+        await steps[STEPS.LOAD_CATEGORY_STEPS](cat);
+        await questions[QUESTIONS.LOAD_CATEGORY_QUESTIONS](cat);
+        await answers[ANSWERS.LOAD_CATEGORY_ANSWERS](cat);
+        category[CATEGORY.SELECT_CATEGORY](cat);
+    }
+
     render() {
         return (
             <div className="main-content">
@@ -17,43 +27,27 @@ class CategorySelector extends Component {
                 <div className="category-panel">
                     <CategoryPane
                         image='express.svg'
-                        onSelect = {()=>{
-                            category.showExpress();
-                            control.hideAll();
-                            quiz_control.goToNextStep();
-                        }}
+                        onSelect={() => this.loadCategory('express')}
                         text='Кредит наличными'
-                        selected={category.show_express}
+                        selected={category.category === 'express'}
                     />
                     <CategoryPane
                         image='auto.svg'
-                        onSelect = {()=>{
-                            category.showAuto();
-                            control.hideAll();
-                            quiz_control.goToNextStep();
-                        }}
+                        onSelect={() => this.loadCategory('auto')}
                         text='Автокредит'
-                        selected={category.show_auto}
+                        selected={category.category === 'auto'}
                     />
                     <CategoryPane
                         image='credline.svg'
-                        onSelect = {()=>{
-                            category.showPledge();
-                            control.hideAll();
-                            quiz_control.goToNextStep();
-                        }}
+                        onSelect={() => this.loadCategory('pledge')}
                         text='Кредит под залог'
-                        selected={category.show_pledge}
+                        selected={category.category === 'pledge'}
                     />
                     <CategoryPane
                         image='hypotech.svg'
-                        onSelect = {()=>{
-                            category.showHypothec();
-                            control.hideAll();
-                            quiz_control.goToNextStep();
-                        }}
+                        onSelect={() => this.loadCategory('hypothec')}
                         text='Ипотека'
-                        selected={category.show_hypothec}
+                        selected={category.category === 'hypothec'}
                     />
                 </div>
             </div>

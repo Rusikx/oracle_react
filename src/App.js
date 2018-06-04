@@ -15,10 +15,10 @@ class App extends Component {
         return (
             <div className="App">
                 <Header/>
-                { control.show_banner ? <Banner/> : ''}
+                {control.show_banner ? <Banner/> : ''}
                 <StepsWidget/>
-                { control.show_condition ? <Condition/> : ''}
-                { control.show_footer ? <Footer/> : ''}
+                {control.show_condition ? <Condition/> : ''}
+                {control.show_footer ? <Footer/> : ''}
             </div>
         );
     }

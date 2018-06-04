@@ -1,4 +1,4 @@
-import {observable, action} from 'mobx'
+import {action, observable} from 'mobx'
 
 export class ViewPartsControl {
     @observable show_banner = true;
