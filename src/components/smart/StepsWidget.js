@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
 import {observer} from 'mobx-react';
+import PropTypes from 'prop-types';
 
 import CategorySelector from "./CategorySelector";
 import QuestionsWidget from "../smart/QuestionsWidget";
 
 import {steps} from '../../mst/store';
 import {GO_BACK, GO_NEXT} from "../../mst/constants/steps";
+
+import '../../styles/smart/pagination.css';
 
 @observer
 class StepsWidget extends Component {
@@ -18,7 +21,7 @@ class StepsWidget extends Component {
 
         if (steps.current.type === 'category') {
             return <div className='steps-widget'>
-                <CategorySelector/>
+                <CategorySelector onSelect={this.props.onSelect}/>
             </div>
         }
 
@@ -38,7 +41,7 @@ class StepsWidget extends Component {
                 }
                 {
                     steps.next ? <div className='step-btn btn-next'
-                                      onClick={steps[GO_NEXT]}
+                                      onClick={()=> steps.current.isComplete ? steps[GO_NEXT]() : ''}
                     >Вперед</div> : ''
                 }
             </div>
@@ -46,5 +49,9 @@ class StepsWidget extends Component {
     }
 
 }
+
+StepsWidget.propTypes = {
+    onSelect: PropTypes.func
+};
 
 export default StepsWidget;

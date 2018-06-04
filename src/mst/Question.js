@@ -37,7 +37,11 @@ const QuestionModel = types.model({
 }).actions(self => ({
     [SET_VALUE](value) {
         self.value = value;
-        self.answered = true;
+        if(value !== null){
+            self.answered = true;
+        }else{
+            self.answered = false;
+        }
     },
 })).views(self => ({
     get answers() {

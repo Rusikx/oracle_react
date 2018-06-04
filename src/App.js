@@ -16,7 +16,7 @@ class App extends Component {
             <div className="App">
                 <Header/>
                 {control.show_banner ? <Banner/> : ''}
-                <StepsWidget/>
+                <StepsWidget onSelect={()=> control.hideAll()} />
                 {control.show_condition ? <Condition/> : ''}
                 {control.show_footer ? <Footer/> : ''}
             </div>

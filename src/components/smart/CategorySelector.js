@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {observer} from 'mobx-react';
+import PropTypes from 'prop-types';
 
 import '../../styles/smart/categories.css';
 import CategoryPane from "../smart/CategoryPane";
@@ -9,11 +10,14 @@ import * as ANSWERS from '../../mst/constants/answers';
 import * as STEPS from '../../mst/constants/steps';
 
 import {answers, category, questions, steps} from '../../mst/store';
+import {ViewPartsControl} from "../../storages/ViewPartsControl";
 
 @observer
 class CategorySelector extends Component {
 
     async loadCategory(cat) {
+        this.props.onSelect();
+
         await steps[STEPS.LOAD_CATEGORY_STEPS](cat);
         await questions[QUESTIONS.LOAD_CATEGORY_QUESTIONS](cat);
         await answers[ANSWERS.LOAD_CATEGORY_ANSWERS](cat);
@@ -54,5 +58,9 @@ class CategorySelector extends Component {
         );
     }
 }
+
+CategorySelector.propTypes = {
+    onSelect: PropTypes.func
+};
 
 export default CategorySelector;

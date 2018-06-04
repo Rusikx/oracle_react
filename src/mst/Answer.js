@@ -2,7 +2,7 @@ import {types} from 'mobx-state-tree';
 import StepModel from "./Step";
 import QuestionModel from "./Question";
 import {ACTIVATE_ANSWER, DEACTIVATE_ANSWER} from "./constants/answers";
-import {SET_VALUE} from "./constants/questions";
+import {FILL_VALUE, FLUSH_VALUES, PREPARE_VALUE, SET_VALUE} from "./constants/questions";
 
 const Value = types.custom({
     name: 'value',
@@ -32,8 +32,22 @@ const AnswerModel = types.model({
     value: Value,
     active: types.optional(types.boolean, false)
 }).actions(self => ({
+    [FLUSH_VALUES](){
+        self.question.answers.map(answer => {
+            answer[DEACTIVATE_ANSWER]();
+            return false;
+        });
+        self.question[SET_VALUE](null);
+    },
+    [FILL_VALUE](value) {
+        self.question[SET_VALUE](value);
+        self.active = true;
+    },
+    [PREPARE_VALUE]() {
+        self[FLUSH_VALUES]();
+        self.active = true;
+    },
     [ACTIVATE_ANSWER]() {
-
         self.question.answers.map(answer => {
             answer[DEACTIVATE_ANSWER]();
             return false;

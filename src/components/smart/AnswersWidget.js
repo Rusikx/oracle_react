@@ -6,8 +6,10 @@ import OracleButton from "./buttons/OracleButton";
 import OracleButtonInput from "./buttons/OracleButtonInput";
 
 import '../../styles/smart/answers.css';
-import {answers} from "../../mst/store";
+import {answers, steps} from "../../mst/store";
 import {ACTIVATE_ANSWER, GET_BY_ID} from "../../mst/constants/answers";
+import {FILL_VALUE, FLUSH_VALUES, PREPARE_VALUE} from "../../mst/constants/questions";
+import {GET_STEP_BY_ID, GO_NEXT} from "../../mst/constants/steps";
 
 @observer
 class AnswersWidget extends Component {
@@ -17,6 +19,13 @@ class AnswersWidget extends Component {
 
         this.state = {
             answer: answers[GET_BY_ID](props.id)
+        }
+    }
+
+    activate(answer){
+        answer[ACTIVATE_ANSWER]();
+        if(answer.step.isComplete){
+            steps[GO_NEXT]();
         }
     }
 
@@ -30,7 +39,7 @@ class AnswersWidget extends Component {
                     title={answer.title}
                     type={answer.type}
                     checked={answer.active}
-                    onClick={answer[ACTIVATE_ANSWER]}
+                    onClick={()=>this.activate(answer)}
                 />
             </div>
         }
@@ -40,6 +49,10 @@ class AnswersWidget extends Component {
                 <OracleButtonInput
                     title={answer.title}
                     type={answer.type}
+                    active={answer.active}
+                    value={answer.question.value}
+                    onSelect={answer[PREPARE_VALUE]}
+                    onFill={value => answer[FILL_VALUE](value)}
                 />
             </div>
         }
