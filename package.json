@@ -61,7 +61,7 @@
     "webpack-manifest-plugin": "1.3.2",
     "whatwg-fetch": "2.0.3"
   },
-  "homepage": "https://rusikx.github.io/oracle_react",
+  "homepage": "https://Rusikx.github.io/oracle_react",
   "scripts": {
     "build-css": "node-sass src/ -o src/",
     "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",

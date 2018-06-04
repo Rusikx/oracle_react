@@ -9,9 +9,11 @@
 }
 
 .step-btn {
+  display: inline-flex;
+  align-items: center;
   width: 150px;
+
   padding: 5px;
-  display: inline-block;
   border: 2px solid #BFBFBF;
   border-radius: 5px;
   cursor: pointer;
@@ -19,9 +21,9 @@
 }
 
 .btn-prev {
+  justify-content: flex-start;
   color: #BFBFBF;
   font-weight: bold;
-  text-align: left;
   padding-left: 1.5em;
 }
 
@@ -51,10 +53,11 @@
 }
 
 .btn-next {
+  justify-content: flex-end;
   border-color: #FFBB00;
   color: #FFBB00;
   font-weight: bold;
-  text-align: right;
+  align-items: flex-end;
   padding-right: 1.5em;
 }
 

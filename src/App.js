@@ -4,6 +4,7 @@ import Header from "./components/static/header";
 import Footer from "./components/static/footer";
 import './styles/font-awesome.css';
 import Banner from "./components/static/banner";
+import Typ from "./components/smart/typ";
 import {observer} from 'mobx-react';
 import control from "./storages/ViewPartsControl";
 import Condition from "./components/static/condition";
@@ -19,12 +20,10 @@ class App extends Component {
                 <Header/>
                 {control.show_banner ? <Banner/> : ''}
                 {!control.show_finish ?
-                    <StepsWidget onSelect={() => control.hideAll()} onFinish={() => control.finish()}/> : ''}
+                    <StepsWidget onSelect={() => control.hideAll()} onFinish={() => control.finish()} /> : ''}
                 {control.show_condition ? <Condition/> : ''}
-                {control.show_finish ? <div>
-                    Thank You Page
-                    {JSON.stringify(questions[GET_ANSWERS]())}
-                </div> : ''}
+                {control.show_finish ? <Typ /*questions={questions[GET_ANSWERS]()}*/ /> : ''}
+                {/*{//JSON.stringify(questions[GET_ANSWERS]())}*/}
                 {control.show_footer ? <Footer/> : ''}
             </div>
         );
