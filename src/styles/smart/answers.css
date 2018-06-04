@@ -1,4 +1,4 @@
-.answers {
-  display: inline-block;
-  min-width: 30%;
-  margin: 7px 0; }
+.answer {
+    flex-basis: 35%;
+    display: inline-block;
+}

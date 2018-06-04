@@ -1,80 +1,98 @@
 .footer {
-  background-color: #F1EFEF;
-  min-height: 100px; }
+    background-color: #F1EFEF;
+    min-height: 100px;
+}
 
 .footer:before, .footer__location:before, .footer__contacts:before {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  width: 100%; }
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
 
 .footer > * {
-  display: inline-block;
-  float: left;
-  margin: 0; }
+    display: inline-block;
+    float: left;
+    margin: 0;
+}
 
 .footer p {
-  margin: 0; }
+    margin: 0;
+}
 
 .footer > *:last-child {
-  width: 22%;
-  float: right;
-  text-align: right; }
+    width: 22%;
+    float: right;
+    text-align: right;
+}
 
 .footer__contacts p:last-child {
-  white-space: nowrap; }
+    white-space: nowrap;
+}
 
 .footer__social a {
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0);
-  width: 30px;
-  height: 30px;
-  margin: 0 1.5px;
-  text-align: center;
-  border-radius: 20px;
-  border: 2px solid #01AA53; }
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0);
+    width: 30px;
+    height: 30px;
+    margin: 0 1.5px;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid #01AA53;
+}
 
 .footer__social a:before {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%; }
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
 
 .footer__social i, .footer__social svg {
-  display: inline-block;
-  color: #01AA53;
-  vertical-align: middle; }
+    display: inline-block;
+    color: #01AA53;
+    vertical-align: middle;
+}
 
 .footer__social i {
-  font-size: 20px; }
+    font-size: 20px;
+}
 
 .footer__social svg {
-  font-size: 19px; }
+    font-size: 19px;
+}
 
 .footer__social {
-  width: 35%;
-  text-align: center; }
+    width: 35%;
+    text-align: center;
+}
 
 .footer__location {
-  width: 37%;
-  text-align: center; }
+    width: 37%;
+    text-align: center;
+}
 
 .footer__location p {
-  text-align: left; }
+    text-align: left;
+}
 
 .footer__location p br, .work__title > p br, .pension__title > p br, .more_salary__title > p br,
 .kredit-size__title > p br, .delay__title > p br {
-  display: none; }
+    display: none;
+}
 
 .footer > .footer__oracle {
-  display: inline-block;
-  width: 100%;
-  text-align: center; }
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
 
 .footer__oracle .footer__social {
-  display: inline-block;
-  width: auto; }
+    display: inline-block;
+    width: auto;
+}
 
 .footer__oracle > p {
-  margin: 15px auto 0;
-  font-size: 13px; }
+    margin: 15px auto 0;
+    font-size: 13px;
+}

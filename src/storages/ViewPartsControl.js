@@ -4,6 +4,13 @@ export class ViewPartsControl {
     @observable show_banner = true;
     @observable show_footer = true;
     @observable show_condition = true;
+    @observable show_finish = false;
+
+    @action
+    finish() {
+        this.hideAll();
+        this.show_finish = true;
+    }
 
     @action
     hideBanner() {
