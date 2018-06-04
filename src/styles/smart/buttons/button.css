@@ -29,6 +29,7 @@
     font: normal 16px/26px "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff; }
   .button .button__text {
+    min-width: 80%;
     margin: 0;
     padding: 0 0 0 10px;
     color: #000;

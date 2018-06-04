@@ -9,8 +9,21 @@ const StepModel = types.model({
     get questions() {
         return questions.questions.filter(question => question.step.id === self.id);
     },
-    get answeres() {
+    get isComplete() {
+        return self.questions.reduce(function (previous, current) {
+            if (
+                previous === true
+                && current.answered === true
+            ) {
+                return true;
+            }
 
+            if (current.type === 'form_submit') {
+                return previous;
+            }
+
+            return false;
+        }, true);
     }
 }));
 
