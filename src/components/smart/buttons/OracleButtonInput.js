@@ -8,23 +8,22 @@ class OracleButtonInput extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            input: false,
             blur: false,
             value: null
         }
     }
 
     enableInput() {
+        this.props.onSelect();
         this.setState({
-            input: true,
             blur: false,
             value: this.state.value
-        })
+        });
     }
 
     blurInput(event) {
+        this.props.onFill(event.target.value);
         this.setState({
-            input: true,
             blur: true,
             value: event.target.value
         })
@@ -33,14 +32,15 @@ class OracleButtonInput extends Component {
     render() {
         return (
             <div onClick={() => this.enableInput()}
-                 className={this.state.input ? 'button _input _action' : 'button _input'}
+                 className={this.props.active ? 'button _input _action' : 'button _input'}
             >
                 {(() => {
-                    if (this.state.input) {
-                        return <input
-                            className={this.state.blur ? "button__input _blur" : "button__input"}
-                            placeholder={this.props.title} type="tel"
-                            onBlur={this.blurInput.bind(this)}
+                    if (this.props.active) {
+                        return <input autoFocus={true}
+                                      className={this.state.blur ? "button__input _blur" : "button__input"}
+                                      placeholder={this.props.title} type="tel"
+                                      onBlur={this.blurInput.bind(this)}
+                                      defaultValue={this.props.value === null ? '' : this.props.value}
                         />;
                     } else {
                         return <div className="button__text">{this.props.title}</div>;
@@ -54,8 +54,10 @@ class OracleButtonInput extends Component {
 OracleButtonInput.propTypes = {
     title: PropTypes.string,
     type: PropTypes.string,
-    action: PropTypes.bool,
-    onClick: PropTypes.func,
+    active: PropTypes.bool,
+    onSelect: PropTypes.func,
+    onFill: PropTypes.func,
+    value: PropTypes.any
 };
 
 export default OracleButtonInput;

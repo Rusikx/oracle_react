@@ -126,7 +126,7 @@ const pledge = {
             id: 12,
             step_id: 4,
             title: 'Телефон',
-            name: 'middle_name',
+            name: 'mobile_phone',
             type: 'form_input',
             label: '+7(000)000-00-00',
         },

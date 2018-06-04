@@ -40,6 +40,13 @@ const QuestionsModel = types.model({
     },
     [QUESTIONS.GET_QUESTIONS_BY_STEP_ID](id) {
         return self.questions.filter(question => question.step.id === id).shift();
+    },
+    [QUESTIONS.GET_ANSWERS]() {
+        return self.questions.map((question) => ({
+            name: question.name,
+            answered: question.answered,
+            value: question.value
+        }))
     }
 })).views(self => ({}));
 
