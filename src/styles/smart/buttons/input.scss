@@ -1,0 +1,33 @@
+.input-container{
+  width: 50%;
+  margin: 10px auto 20px;
+  height: 40px;
+  padding: 0;
+  background-color: #EBEBEB;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #EBEBEB;
+  &:hover {
+    border: 2px solid #01AA53;
+  }
+  &._active {
+    border: 2px solid #FFBB00;
+  }
+
+  &._active .oracle-input{
+    background-color: #FFFFFF;
+    &._blur{
+      background-color: #EBEBEB;
+    }
+  }
+  .oracle-input{
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    background-color: #EBEBEB;
+
+  }
+}

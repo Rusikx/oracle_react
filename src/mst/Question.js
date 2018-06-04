@@ -37,7 +37,7 @@ const QuestionModel = types.model({
 }).actions(self => ({
     [SET_VALUE](value) {
         self.value = value;
-        if(value !== null){
+        if(value !== null && value !== ''){
             self.answered = true;
         }else{
             self.answered = false;

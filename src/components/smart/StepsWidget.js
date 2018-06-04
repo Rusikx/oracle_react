@@ -29,7 +29,9 @@ class StepsWidget extends Component {
             <div>
                 {
                     steps.current.questions
-                        .map(question => <QuestionsWidget key={`question-${question.id}`} id={question.id}/>)
+                        .map(question => <QuestionsWidget key={`question-${question.id}`}
+                                                          onFinish={this.props.onFinish}
+                                                          id={question.id}/>)
                 }
             </div>
             <div className='steps-paginator'>
@@ -51,7 +53,8 @@ class StepsWidget extends Component {
 }
 
 StepsWidget.propTypes = {
-    onSelect: PropTypes.func
+    onSelect: PropTypes.func,
+    onFinish: PropTypes.func,
 };
 
 export default StepsWidget;

@@ -17,6 +17,11 @@ const StepModel = types.model({
             ){
                 return true;
             }
+
+            if(current.type === 'form_submit'){
+                return previous;
+            }
+
             return false;
         }, true);
     }
