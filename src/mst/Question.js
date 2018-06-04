@@ -16,7 +16,7 @@ const Value = types.custom({
     isTargetType(value) {
         return typeof value === 'string' || typeof value === 'number';
     },
-    getValidationMessage(snapshot) {
+    getValidationMessage() {
         return 'value must be string or integer';
     }
 });
@@ -37,11 +37,7 @@ const QuestionModel = types.model({
 }).actions(self => ({
     [SET_VALUE](value) {
         self.value = value;
-        if(value !== null && value !== ''){
-            self.answered = true;
-        }else{
-            self.answered = false;
-        }
+        self.answered = value !== null && value !== '';
     },
 })).views(self => ({
     get answers() {

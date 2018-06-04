@@ -14,7 +14,7 @@ class OracleInput extends Component {
         }
     }
 
-    select(){
+    select() {
         this.setState({
             blur: false,
             select: true,

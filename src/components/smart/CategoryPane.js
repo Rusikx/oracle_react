@@ -9,7 +9,7 @@ class CategoryPane extends Component {
             <div className='category-chooser'>
                 <div className="category-frame">
                     <div className="category-frame--img"
-                         style={{backgroundImage: `url(../images/oracle/${image})`}}
+                         style={{backgroundImage: `url(/images/oracle/${image})`}}
                     ></div>
                     <div className="category-frame--text">{this.props.text}</div>
                 </div>

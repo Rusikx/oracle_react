@@ -27,7 +27,7 @@ class QuestionsWidget extends Component {
 
         const question = this.state.question;
 
-        if(question.type === 'btn_bar'){
+        if (question.type === 'btn_bar') {
             return (
                 <div className="questions">
                     <div className="questions__title">{question.title}</div>
@@ -41,7 +41,7 @@ class QuestionsWidget extends Component {
             );
         }
 
-        if(question.type === 'input_question'){
+        if (question.type === 'input_question') {
             return (
                 <div className="questions">
                     <div className="questions__title">{question.title}</div>
@@ -55,7 +55,7 @@ class QuestionsWidget extends Component {
                 </div>
             );
         }
-        if(question.type === 'form_select'){
+        if (question.type === 'form_select') {
             return (
                 <div className="questions">
                     <div className="questions__content">
@@ -70,7 +70,7 @@ class QuestionsWidget extends Component {
                 </div>
             );
         }
-        if(question.type === 'form_input'){
+        if (question.type === 'form_input') {
             return (
                 <div className="questions">
                     <div className="questions__content">
@@ -86,7 +86,7 @@ class QuestionsWidget extends Component {
                 </div>
             );
         }
-        if(question.type === 'form_submit'){
+        if (question.type === 'form_submit') {
             return <OracleSubmit
                 active={question.step.isComplete}
                 onClick={this.props.onFinish}

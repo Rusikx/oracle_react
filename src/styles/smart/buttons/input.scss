@@ -1,4 +1,4 @@
-.input-container{
+.input-container {
   width: 50%;
   margin: 10px auto 20px;
   height: 40px;
@@ -15,13 +15,13 @@
     border: 2px solid #FFBB00;
   }
 
-  &._active .oracle-input{
+  &._active .oracle-input {
     background-color: #FFFFFF;
-    &._blur{
+    &._blur {
       background-color: #EBEBEB;
     }
   }
-  .oracle-input{
+  .oracle-input {
     width: 100%;
     border: none;
     font-size: 20px;

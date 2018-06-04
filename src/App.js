@@ -18,7 +18,8 @@ class App extends Component {
             <div className="App">
                 <Header/>
                 {control.show_banner ? <Banner/> : ''}
-                {!control.show_finish ? <StepsWidget onSelect={()=> control.hideAll()} onFinish={()=> control.finish()} /> : ''}
+                {!control.show_finish ?
+                    <StepsWidget onSelect={() => control.hideAll()} onFinish={() => control.finish()}/> : ''}
                 {control.show_condition ? <Condition/> : ''}
                 {control.show_finish ? <div>
                     Thank You Page

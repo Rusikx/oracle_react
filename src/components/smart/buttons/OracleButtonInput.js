@@ -37,9 +37,9 @@ class OracleButtonInput extends Component {
                 {(() => {
                     if (this.props.active) {
                         return <input autoFocus={true}
-                            className={this.state.blur ? "button__input _blur" : "button__input"}
-                            placeholder={this.props.title} type="tel"
-                            onBlur={this.blurInput.bind(this)}
+                                      className={this.state.blur ? "button__input _blur" : "button__input"}
+                                      placeholder={this.props.title} type="tel"
+                                      onBlur={this.blurInput.bind(this)}
                                       defaultValue={this.props.value === null ? '' : this.props.value}
                         />;
                     } else {

@@ -43,7 +43,7 @@ class StepsWidget extends Component {
                 }
                 {
                     steps.next ? <div className='step-btn btn-next'
-                                      onClick={()=> steps.current.isComplete ? steps[GO_NEXT]() : ''}
+                                      onClick={() => steps.current.isComplete ? steps[GO_NEXT]() : ''}
                     >Вперед</div> : ''
                 }
             </div>

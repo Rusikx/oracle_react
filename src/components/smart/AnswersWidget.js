@@ -8,8 +8,8 @@ import OracleButtonInput from "./buttons/OracleButtonInput";
 import '../../styles/smart/answers.css';
 import {answers, steps} from "../../mst/store";
 import {ACTIVATE_ANSWER, GET_BY_ID} from "../../mst/constants/answers";
-import {FILL_VALUE, FLUSH_VALUES, PREPARE_VALUE} from "../../mst/constants/questions";
-import {GET_STEP_BY_ID, GO_NEXT} from "../../mst/constants/steps";
+import {FILL_VALUE, PREPARE_VALUE} from "../../mst/constants/questions";
+import {GO_NEXT} from "../../mst/constants/steps";
 
 @observer
 class AnswersWidget extends Component {
@@ -22,9 +22,9 @@ class AnswersWidget extends Component {
         }
     }
 
-    activate(answer){
+    activate(answer) {
         answer[ACTIVATE_ANSWER]();
-        if(answer.step.isComplete){
+        if (answer.step.isComplete) {
             steps[GO_NEXT]();
         }
     }
@@ -39,7 +39,7 @@ class AnswersWidget extends Component {
                     title={answer.title}
                     type={answer.type}
                     checked={answer.active}
-                    onClick={()=>this.activate(answer)}
+                    onClick={() => this.activate(answer)}
                 />
             </div>
         }

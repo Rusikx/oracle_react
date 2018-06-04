@@ -10,7 +10,6 @@ import * as ANSWERS from '../../mst/constants/answers';
 import * as STEPS from '../../mst/constants/steps';
 
 import {answers, category, questions, steps} from '../../mst/store';
-import {ViewPartsControl} from "../../storages/ViewPartsControl";
 
 @observer
 class CategorySelector extends Component {

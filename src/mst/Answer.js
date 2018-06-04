@@ -15,7 +15,7 @@ const Value = types.custom({
     isTargetType(value) {
         return typeof value === 'string' || typeof value === 'number';
     },
-    getValidationMessage(snapshot) {
+    getValidationMessage() {
         return 'value must be string or integer';
     }
 });
@@ -32,7 +32,7 @@ const AnswerModel = types.model({
     value: Value,
     active: types.optional(types.boolean, false)
 }).actions(self => ({
-    [FLUSH_VALUES](){
+    [FLUSH_VALUES]() {
         self.question.answers.map(answer => {
             answer[DEACTIVATE_ANSWER]();
             return false;

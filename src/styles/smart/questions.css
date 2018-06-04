@@ -1,15 +1,20 @@
 .questions {
-  width: 100%;
-  text-align: center; }
-  .questions .questions__title {
+    width: 100%;
+    text-align: center;
+}
+
+.questions .questions__title {
     margin: 10px 0 8px;
     text-align: center;
-    font-size: 25px; }
-  .questions .questions__content {
+    font-size: 25px;
+}
+
+.questions .questions__content {
     margin: 0 auto;
     width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-flow: row wrap;
-    flex-direction: row; }
+    flex-direction: row;
+}

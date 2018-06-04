@@ -7,7 +7,7 @@ export class ViewPartsControl {
     @observable show_finish = false;
 
     @action
-    finish(){
+    finish() {
         this.hideAll();
         this.show_finish = true;
     }
