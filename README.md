@@ -1,1 +1,1 @@
-#Work project in <a hrref="https://rusikx.github.io/oracle_react/">https://rusikx.github.io/oracle_react/</a>
+#Work project in <a hrref="https://rusikx.github.io/oracle_react/" target="_blank">https://rusikx.github.io/oracle_react/</a>
