@@ -1,6 +1,9 @@
 .footer {
-  background-color: #F1EFEF;
+  display: inline-block;
+  width: 100%;
   min-height: 100px;
+  
+  background-color: #F1EFEF;
 }
 
 .footer:before, .footer__location:before, .footer__contacts:before {
@@ -56,9 +59,11 @@
   color: #01AA53;
   vertical-align: middle
 }
+
 .footer__social i {
   font-size: 20px;
 }
+
 .footer__social svg {
   font-size: 19px;
 }

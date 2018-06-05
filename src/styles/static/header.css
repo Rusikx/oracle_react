@@ -1,27 +1,30 @@
 .header {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
+  height: 15vh;
+  max-height: 150px;
   box-sizing: border-box;
-  padding: 20px 10% 0;
-  max-height: 150px; }
+  padding: 20px 10% 0; }
 
-.header__logo, .header__contacts {
+.header .header__logo, .header .header__contacts {
   margin: 0 10px; }
 
-.header__logo {
+.header .header__logo {
   float: left;
   background: url(../../images/logo.png) no-repeat;
   background-size: 150px;
   width: 150px;
   height: 65px; }
 
-.header__contacts {
+.header .header__contacts {
   width: 220px;
   height: 50px;
   float: right;
   text-align: center; }
 
-.header__contacts--link {
+.header .header__contacts .header__contacts--link {
   display: inline-block;
   font-size: 22px;
   color: #333;
@@ -29,11 +32,11 @@
   vertical-align: top;
   padding-top: 5px; }
 
-.header__contacts--link:hover {
+.header .header__contacts .header__contacts--link:hover {
   color: #333;
   text-decoration: none; }
 
-.header__contacts--icon {
+.header .header__contacts .header__contacts--link .header__contacts--icon {
   vertical-align: top;
   display: inline-block;
   min-width: 40px;
@@ -46,22 +49,24 @@
   color: #00AB4F;
   transform: rotate(90deg); }
 
-.header__contacts--call {
+.header .header__contacts .header__contacts--link .header__contacts--call {
   vertical-align: top;
   display: inline-block;
   max-width: 80%;
   padding: 0 5px 5px; }
 
-.header__contacts--text {
+.header .header__contacts .header__contacts--link .header__contacts--call .header__contacts--text {
   float: right;
   font-size: 12px; }
 
-.header__contacts--phone {
+.header .header__contacts .header__contacts--link .header__contacts--call .header__contacts--phone {
   float: right;
   font-size: 19px; }
 
 @media (max-width: 900px) {
-  .header__contacts--call {
-    display: none; }
-  .header__contacts {
-    width: auto; } }
+  .header {
+    padding: 20px 10px 0; }
+  .header .header__contacts {
+    width: auto; }
+  .header .header__contacts .header__contacts--link .header__contacts--call {
+    display: none; } }

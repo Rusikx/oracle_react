@@ -4,11 +4,12 @@ import PropTypes from 'prop-types';
 class CategoryPane extends Component {
     render() {
         const image = this.props.image;
-        return <div onClick={()=>this.props.onSelect()} className={this.props.selected ? 'category-pane category-pane-selected' : 'category-pane'}>
+        return <div onClick={() => this.props.onSelect()}
+                    className={this.props.selected ? 'category-pane category-pane-selected' : 'category-pane'}>
             <div className='category-chooser'>
                 <div className="category-frame">
                     <div className="category-frame--img"
-                         style={{backgroundImage : `url(../images/oracle/${image})`}}
+                         style={{backgroundImage: `url('./images/oracle/${image}')`}}
                     ></div>
                     <div className="category-frame--text">{this.props.text}</div>
                 </div>

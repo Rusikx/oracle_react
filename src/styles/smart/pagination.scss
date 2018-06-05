@@ -1,5 +1,5 @@
 
-.steps-paginator{
+.steps-paginator {
   margin: 0 auto;
   padding: 10px;
   display: flex;
@@ -8,24 +8,26 @@
   width: 60%;
 }
 
-.step-btn{
+.step-btn {
+  display: inline-flex;
+  align-items: center;
   width: 150px;
+
   padding: 5px;
-  display: inline-block;
   border: 2px solid #BFBFBF;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1.2em;
 }
 
-.btn-prev{
+.btn-prev {
+  justify-content: flex-start;
   color: #BFBFBF;
   font-weight: bold;
-  text-align: left;
   padding-left: 1.5em;
 }
 
-.btn-prev:before{
+.btn-prev:before {
   content: "\f104";
   font-family: FontAwesome, serif;
   font-size: 1.2em;
@@ -33,16 +35,16 @@
   margin-right: 0.5em;
 }
 
-.btn-prev:hover:before{
+.btn-prev:hover:before {
   color: #FFBB00;
 }
 
-.btn-prev:hover{
+.btn-prev:hover {
   color: #FFBB00;
   border: 2px solid #FFBB00;
 }
 
-.btn-next:after{
+.btn-next:after {
   content: "\f105";
   font-family: FontAwesome, serif;
   font-size: 1.2em;
@@ -50,19 +52,37 @@
   margin-left: 0.3em;
 }
 
-.btn-next{
+.btn-next {
+  justify-content: flex-end;
   border-color: #FFBB00;
   color: #FFBB00;
   font-weight: bold;
-  text-align: right;
+  align-items: flex-end;
   padding-right: 1.5em;
 }
 
-.btn-next:hover:after{
+.btn-next:hover:after {
   color: #ffffff;
 }
 
-.btn-next:hover{
+.btn-next:hover {
   background-color: #FFBB00;
   color: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .steps-paginator {
+    width: 90%;
+    padding: 10px 0;
+  }
+  .btn-prev, .btn-next {
+    justify-content: center;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .btn-prev, .btn-next {
+    width: 45%;
+  }
 }

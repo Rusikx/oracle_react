@@ -1,0 +1,74 @@
+.input-container {
+  width: 50%;
+  margin: 10px auto 20px;
+  height: 40px;
+  padding: 0;
+  background-color: #EBEBEB;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #EBEBEB;
+  &:hover {
+    border: 2px solid #01AA53;
+  }
+  &._active {
+    border: 2px solid #FFBB00;
+  }
+
+  &._active .oracle-input {
+    background-color: #FFFFFF;
+    &._blur {
+      background-color: #EBEBEB;
+    }
+  }
+  .oracle-input {
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    background-color: #EBEBEB;
+
+  }
+}
+
+.oracle-from-input {
+  &:focus {
+    outline: none;
+  }
+  &::-webkit-input-placeholder { /* WebKit browsers */
+    color: transparent;
+  }
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: transparent;
+  }
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: transparent;
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: transparent;
+  }
+}
+
+@media (max-width: 900px) {
+  .questions__content .form-container {
+    .oracle-from-input {
+      &::-webkit-input-placeholder { /* WebKit browsers */
+        color: initial;
+      }
+      &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: initial;
+      }
+      &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: initial;
+      }
+      &:-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: initial;
+      }
+    }
+
+    .form-label {
+      display: none;
+    }
+  }
+}

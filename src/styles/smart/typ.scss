@@ -1,0 +1,29 @@
+@import "../paths";
+
+.typ {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  margin: 0 auto;
+  .typ__content {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 70%;
+    height: 50vh;
+
+    .typ__title {
+      font-size: 24px;
+    }
+
+    .typ__img {
+      display: inline-block;
+      width: 478px;
+      height: 433px;
+      background: url($typ__easy_money) center /contain no-repeat;
+    }
+  }
+}

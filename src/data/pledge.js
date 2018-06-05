@@ -126,7 +126,7 @@ const pledge = {
             id: 12,
             step_id: 4,
             title: 'Телефон',
-            name: 'middle_name',
+            name: 'mobile_phone',
             type: 'form_input',
             label: '+7(000)000-00-00',
         },
@@ -176,7 +176,7 @@ const pledge = {
             step_id: 1,
             title: 'Указать точную сумму',
             value: 0,
-            type: 'input-OracleButton'
+            type: 'input-button'
         },
         {
             id: 6,
@@ -240,7 +240,7 @@ const pledge = {
             step_id: 1,
             title: 'Указать точный срок',
             value: 60,
-            type: 'input-OracleButton'
+            type: 'input-button'
         },
         {
             id: 14,
@@ -320,7 +320,7 @@ const pledge = {
             step_id: 2,
             title: 'Указать другую сумму',
             value: 0,
-            type: 'input-OracleButton'
+            type: 'input-button'
         },
         {
             id: 24,

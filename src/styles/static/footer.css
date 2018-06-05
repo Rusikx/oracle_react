@@ -1,6 +1,8 @@
 .footer {
-  background-color: #F1EFEF;
-  min-height: 100px; }
+  display: inline-block;
+  width: 100%;
+  min-height: 100px;
+  background-color: #F1EFEF; }
 
 .footer:before, .footer__location:before, .footer__contacts:before {
   content: '';

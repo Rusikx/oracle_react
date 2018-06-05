@@ -1,10 +1,10 @@
-.main-content{
+.main-content {
   min-height: 600px;
   padding-top: 30px;
   padding-bottom: 60px;
 }
 
-.category-title{
+.category-title {
   text-align: center;
   font-size: 31px;
   padding: 10px 0 5px;
@@ -19,32 +19,37 @@
   flex-wrap: wrap;
   align-items: center;
 }
-.category-pane{
+
+.category-pane {
   width: 50%;
   margin-top: 15px;
   margin-bottom: 15px;
   cursor: pointer;
   user-select: none;
 }
-.category-chooser{
+
+.category-chooser {
   width: 270px;
   height: 230px;
   margin: 0 auto;
   text-align: center;
   box-sizing: border-box;
   position: relative;
-  border: 3px solid rgba(255,255,255,10);
+  border: 3px solid rgba(255, 255, 255, 10);
   border-radius: 15px;
   padding-bottom: 15px;
   padding-top: 15px;
 }
+
 .category-chooser:hover {
   border: 3px solid #01AA53;
 }
-.category-frame{
+
+.category-frame {
   border-radius: 15px;
 }
-.category-check{
+
+.category-check {
   top: 20px;
   left: 80px;
   position: absolute;
@@ -57,13 +62,16 @@
   line-height: 20px;
   color: #fff;
 }
-.category-chooser:hover .category-check{
+
+.category-chooser:hover .category-check {
   background-color: #01AA53;
 }
-.category-pane-selected .category-chooser{
+
+.category-pane-selected .category-chooser {
   border: 3px solid #FFBB00;
 }
-.category-pane-selected .category-chooser .category-check{
+
+.category-pane-selected .category-chooser .category-check {
   background-color: #FFBB00;
 }
 
@@ -74,15 +82,19 @@
   height: 141px;
   background-repeat: no-repeat;
 }
-.category-frame--text {font-size: 25px;padding: 5px 0}
+
+.category-frame--text {
+  font-size: 25px;
+  padding: 5px 0
+}
 
 @media (max-width: 900px) {
-  .category-pane{
+  .category-pane {
     width: 100%;
     margin-top: 15px;
     margin-bottom: 15px;
   }
-  .category-panel{
+  .category-panel {
     width: 100%;
     justify-content: center;
     flex-direction: column;
