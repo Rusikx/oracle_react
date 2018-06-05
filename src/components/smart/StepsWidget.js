@@ -21,7 +21,7 @@ class StepsWidget extends Component {
     render() {
 
         if (steps.current.type === 'category') {
-            return <div className='steps-widget'>
+            return <div id='content' className='steps-widget'>
                 <CategorySelector onSelect={this.props.onSelect}/>
             </div>
         }

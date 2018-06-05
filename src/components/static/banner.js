@@ -10,7 +10,7 @@ import '../../styles/static/banner.css';
 class banner extends PureComponent {
     render() {
         return (
-            <div className="content--banner">
+            <div className="content--banner" onClick={()=>window.location='#content'}>
                 <div className="banner--fixed">
                     <div className="fixed--clear"/>
                     <div className="fixed--title">
