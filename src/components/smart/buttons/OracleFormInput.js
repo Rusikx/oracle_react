@@ -40,6 +40,7 @@ class OracleFormInput extends Component {
                     {this.props.label}
                 </label>
                 <input id={this.props.id}
+                       type='text'
                        className={this.state.blur ? 'form-control oracle-from-input _blur' : 'form-control oracle-from-input'}
                        placeholder={this.props.placeholder}
                        onBlur={this.blurInput.bind(this)}

@@ -9,7 +9,7 @@ class OracleSubmit extends PureComponent {
         const {active, onClick} = this.props;
 
         return (
-            <div onClick={onClick} className={active ? 'form-button _checked' : 'form-button'}>
+            <div onClick={ (event)=>{ return active? onClick(event) : ()=>{}; } } className={active ? 'form-button _checked' : 'form-button'}>
                 Отправить
             </div>
         );

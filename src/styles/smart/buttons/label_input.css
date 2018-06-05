@@ -21,6 +21,7 @@
 
 .form-container .form-control {
   flex-basis: 40%;
+  height: 35px;
   background-color: #ffffff;
   border: 3px solid #BFBFBF;
   padding: 2px;
@@ -37,14 +38,14 @@
 .form-button {
   width: 20%;
   margin: 15px auto;
-  height: 25px;
+  height: 30px;
   padding: 5px 15px;
   box-sizing: content-box;
   color: #ffffff;
   vertical-align: middle;
   text-align: center;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 30px;
   background-color: #ACACAC;
   border-radius: 5px;
   overflow: hidden;
@@ -52,3 +53,16 @@
 
 .form-button._checked {
   background-color: #FFBB00; }
+
+@media (max-width: 900px) {
+  .form-container {
+    width: 100%; }
+  .form-button {
+    width: 40%;
+    padding: 5px 0; } }
+
+@media (max-width: 600px) {
+  .form-container .form-control {
+    flex-basis: 90%; }
+  .form-button {
+    width: 90%; } }

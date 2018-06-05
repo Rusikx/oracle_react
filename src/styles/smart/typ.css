@@ -4,19 +4,16 @@
   justify-content: center;
   width: 100%;
   margin: 0 auto; }
-
-.typ .typ__content {
-  display: inline-flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 70%;
-  height: 50vh; }
-
-.typ .typ__content .typ__title {
-  font-size: 24px; }
-
-.typ .typ__content .typ__img {
-  display: inline-block;
-  width: 478px;
-  height: 433px;
-  background: url(../../images/oracle/oracle_easy_money.png) center/contain no-repeat; }
+  .typ .typ__content {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+    height: 50vh; }
+    .typ .typ__content .typ__title {
+      font-size: 24px; }
+    .typ .typ__content .typ__img {
+      display: inline-block;
+      width: 478px;
+      height: 433px;
+      background: url(../../images/oracle/oracle_easy_money.png) center/contain no-repeat; }

@@ -2,3 +2,11 @@
   flex-basis: 35%;
   display: inline-block;
   margin: 5px 0; }
+
+@media (max-width: 900px) {
+  .answer {
+    flex-basis: 45%; } }
+
+@media (max-width: 600px) {
+  .answer {
+    flex-basis: 90%; } }

@@ -1,6 +1,9 @@
 .footer {
-  background-color: #F1EFEF;
+  display: inline-block;
+  width: 100%;
   min-height: 100px;
+  
+  background-color: #F1EFEF;
 }
 
 .footer:before, .footer__location:before, .footer__contacts:before {

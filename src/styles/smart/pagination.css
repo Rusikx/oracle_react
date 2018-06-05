@@ -57,3 +57,15 @@
 .btn-next:hover {
   background-color: #FFBB00;
   color: #ffffff; }
+
+@media (max-width: 900px) {
+  .steps-paginator {
+    width: 90%;
+    padding: 10px 0; }
+  .btn-prev, .btn-next {
+    justify-content: center;
+    padding: 5px; } }
+
+@media (max-width: 360px) {
+  .btn-prev, .btn-next {
+    width: 45%; } }

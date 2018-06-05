@@ -31,3 +31,44 @@
 
   }
 }
+
+.oracle-from-input {
+  &:focus {
+    outline: none;
+  }
+  &::-webkit-input-placeholder { /* WebKit browsers */
+    color: transparent;
+  }
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: transparent;
+  }
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: transparent;
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: transparent;
+  }
+}
+
+@media (max-width: 900px) {
+  .questions__content .form-container {
+    .oracle-from-input {
+      &::-webkit-input-placeholder { /* WebKit browsers */
+        color: initial;
+      }
+      &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: initial;
+      }
+      &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: initial;
+      }
+      &:-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: initial;
+      }
+    }
+
+    .form-label {
+      display: none;
+    }
+  }
+}

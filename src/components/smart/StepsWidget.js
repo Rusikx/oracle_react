@@ -8,6 +8,7 @@ import QuestionsWidget from "../smart/QuestionsWidget";
 import {steps} from '../../mst/store';
 import {GO_BACK, GO_NEXT} from "../../mst/constants/steps";
 
+import '../../styles/smart/steps.css';
 import '../../styles/smart/pagination.css';
 
 @observer
@@ -26,14 +27,12 @@ class StepsWidget extends Component {
         }
 
         return <div className='steps-widget'>
-            <div>
-                {
-                    steps.current.questions
-                        .map(question => <QuestionsWidget key={`question-${question.id}`}
-                                                          onFinish={this.props.onFinish}
-                                                          id={question.id}/>)
-                }
-            </div>
+            {
+                steps.current.questions
+                    .map(question => <QuestionsWidget key={`question-${question.id}`}
+                                                      onFinish={this.props.onFinish}
+                                                      id={question.id}/>)
+            }
             <div className='steps-paginator'>
                 {
                     steps.previous ? <div className='step-btn btn-prev'

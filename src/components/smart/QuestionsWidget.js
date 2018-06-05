@@ -80,6 +80,7 @@ class QuestionsWidget extends Component {
                             values={question.values}
                             value={question.value}
                             active={question.answered}
+                            placeholder={question.title}
                             onFill={question[SET_VALUE]}
                         />
                     </div>

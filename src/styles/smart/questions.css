@@ -7,7 +7,7 @@
     font-size: 25px; }
   .questions .questions__content {
     margin: 0 auto;
-    width: 70%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
